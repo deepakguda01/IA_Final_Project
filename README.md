@@ -77,7 +77,29 @@ Used **Kimball’s 4-step dimensional modeling** to define grain, dimensions, an
 
 ---
 
-## 🔁 ETL Flow
+
+## ⚙️ Challenges Faced
+- Daily API call limits delayed data collection
+
+- Lambda handler failed due to Pandas dependency (fixed via custom Lambda Layer)
+
+- Glue crawler setup and schema issues
+
+- Data quality issues (missing values, outliers, inconsistencies)
+
+
+## 🚀 Key Learnings
+- Automating secure data transfers using AWS CLI
+
+- Setting up ETL workflows with AWS Glue and Lambda
+
+- Building dimensional models and optimizing OLAP schemas
+
+- Designing executive-level dashboards in Amazon QuickSight
+
+
+
+## 🔁 ETL Flow 
 
 ```text
-Raw CSV/API Data → S3 → AWS Lambda → AWS Glue (ETL) → RDS → QuickSight Dashboards
+Raw CSV/API Data → S3 → AWS Lambda → AWS Glue (ETL) → RDS → QuickSight Dashboards        
